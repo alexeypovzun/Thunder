@@ -1,0 +1,12 @@
+<?php
+class galleryItem {
+
+	public function __construct($id) {
+    	$this->id = $id;
+    }
+
+    public function Draw() {
+		include('gallery.tpl');
+	}
+}
+?>

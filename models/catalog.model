@@ -1,0 +1,18 @@
+<?php
+class Model {
+
+	public function __construct($db) {
+    	$this->db=$db;
+    }
+
+    public function getProducts() {
+    	$sql = "SELECT * FROM products";
+    	$result = $this->db->query($sql);
+    	$products = false;
+    	while ($row = $result->fetch_assoc()) {
+    		$products[] = new Product($row["id"],$row["code"],$row["name"],$row["price"],$row["stock"],$row["description"],$row["image"],$row["slug"]);
+        }
+    	return $products;
+    }
+}
+?>

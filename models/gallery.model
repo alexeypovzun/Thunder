@@ -1,0 +1,19 @@
+<?php
+class Gallery {
+
+	public function __construct($db,$id) {
+    	$this->db=$db;
+        $this->id=$id;
+    }
+
+    public function getImages() {
+    	$sql = "SELECT id as id_image, image FROM images WHERE product_id ='".$this->id."'";
+    	$result = $this->db->query($sql);
+        $images = false;
+    	while ($row = $result->fetch_assoc()) {
+    		$images[] = new Gallery($row["id_image"],$row["image"]);
+        }
+    	return $images;
+    }
+}
+?>

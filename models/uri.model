@@ -1,0 +1,19 @@
+<?php
+class Uri {
+
+	public function __construct($db,$uri) {
+    	$this->db=$db;
+        $this->uri=$uri;
+    }
+
+    public function getID() {
+    	$sql = "SELECT id FROM products WHERE code='".strtolower($this->uri)."'";
+    	$result = $this->db->query($sql);
+    	$product = false;
+    	while ($row = $result->fetch_assoc()) {
+    		$id = $row["id"];
+        }
+    	return $id;
+    }
+}
+?>

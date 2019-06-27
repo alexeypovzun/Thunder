@@ -1,0 +1,19 @@
+<?php
+class Product {
+
+	public function __construct($id,$code,$name,$price,$stock,$description,$image) {
+    	$this->id = $id;
+    	$this->code = $code;
+    	$this->name = $name;
+    	$this->price = $price;
+    	$this->stock = $stock;
+    	$this->description = $description;
+    	$this->image = $image;
+    }
+
+    public function Draw() {
+		include('views/admin.tpl');
+	}
+}
+
+?>

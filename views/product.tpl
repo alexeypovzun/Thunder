@@ -10,7 +10,7 @@
 
 	            <div class="product_intro_image">
 	               <div class="product_image_wrapper">
-						<img class="product_image" src="/images/catalog/<?php print $this->image; ?>">
+						<img class="product_image" src="images/catalog/<?php print $this->image; ?>">
 					</div>
 	            </div>
 

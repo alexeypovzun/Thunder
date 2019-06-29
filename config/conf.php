@@ -1,8 +1,9 @@
 <?php
 $charset = 'UTF-8';
-$hostname = 'http://thunder';
+$homedir = 'thunder';
+$hostname = 'http://hub.localhost.od.ua/thunder';
 $sitename = 'Рюкзаки Thunder';
-$catimgdir = '/images/catalog';
+$catimgdir = 'thunder/images/catalog';
 $themecolor = '#C0C0C0';
 $brandname = 'Thunder';
 ?>

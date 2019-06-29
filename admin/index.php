@@ -2,9 +2,11 @@
 include('../config/conf.php');
 include('../config/db.php');
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
+    <meta charset="<?php print $charset; ?>">
 	<title><?php print $sitename; ?> :: Управление</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/normalize.css">

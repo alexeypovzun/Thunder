@@ -5,5 +5,5 @@ itstep web25 php&amp;mysql project
 The current online version is located at: 
 http://demo.localhost.od.ua/github/thunder/
 
-admin menu:
+Admin form:
 http://demo.localhost.od.ua/github/thunder/admin/
